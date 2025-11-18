@@ -59,14 +59,23 @@
             //     })
             // })
 
-            var typed = new Typed(".text-typed", {
-                strings: ["Initializing John Shedletsky<br>and heres a new line to see if it will do it and also because this is going to take a while to load and i want to see if it happens"],
-                typeSpeed: 90,
-                backDelay: 10000,
-                loop: true
-            }, setTimeout(typed, 7000))
+            // var typed = new Typed(".text-typed", {
+            //     strings: ["Initializing John Shedletsky<br>and heres a new line to see if it will do it and also because this is going to take a while to load and i want to see if it happens"],
+            //     typeSpeed: 90,
+            //     backDelay: 10000,
+            //     loop: true
+            // })
 
-            // setTimeOut(() => {typed}, 10000);
+            // const myTimeout = setTimeout(typed, 5000);
+
+            setTimeout(function(){
+                var typed = new Typed(".text-typed", {
+                    strings: ["Initializing John Shedletsky<br>...<br>...<br>...<br>Age: 36 years<br>Status: Employed<br>Stable income, solid housing<br>1 dog<br><br>Active on:<br>Twitter<br>Instagram<br>Snapchat<br>YouTube"],
+                    typeSpeed: 40,
+                    backDelay: 10000,
+                    loop: true
+                })
+            }, 9000) //ok so just kinda spitballing here; I should definitely add different information depending on the social media platform presented.
         </script>
 
     </body>
