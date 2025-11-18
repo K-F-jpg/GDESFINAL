@@ -1,0 +1,122 @@
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url(MEDIA/SourceSansPro-Regular.ttf);
+}
+
+@keyframes animation-thing {
+    0% {background-color: white;}
+    100% {background-color: black;}
+}
+body {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    font-family: SourceSansPro-Regular;
+    font-size: 30px;
+    gap: 100px;
+} body.animate {
+    animation: animation-thing ease-in-out 1s;
+    background-color: black;
+}
+
+/* .bar-container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid magenta;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+} */
+
+@keyframes scan-thing {
+    0% {transfom: translateY(10px); background-color: yellow;}
+    50% {transform: translateY(2610px); background-color: green;}
+    100% {transfom: translateY(0px); background-color: yellow;}
+}
+@keyframes gone1 {
+    0% {background-color: white;}
+    100% {background-color: black;}
+}
+.the-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    animation: scan-thing ease 2s;
+    animation-iteration-count: 3;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+} .the-bar.gone {
+    /* animation: gone ease-in-out 1s; */
+    width: 0px;
+    height: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid orange;
+    width: 700px;
+    height: 800px;
+    /* align-items: flex-end;
+    justify-content: flex-end; */
+}
+.person-text {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid magenta;
+    width: 100%;
+    height: 70px;
+    /* align-self: flex-end; */
+    /* position: fixed; */
+    /* margin-bottom: auto; */
+    transform: translateY(730px);
+    font-size: 70px;
+    text-align: center;
+    word-spacing: 40px;
+}
+
+/* @keyframes circle-change {
+    0% {background-image: url(MEDIA/premium_photo-1689530775582-83b8abdb5020.jpg); background-position: top; background-repeat: no-repeat; background-size: 100%;}
+    100% {background-image: url(MEDIA/ascii-art.png); background-position: center; background-repeat: no-repeat; background-size: 100%;}
+} */
+.circle {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    /* width: 80%;
+    height: 25%; */
+    /* background-color: purple; */
+    border: 3px solid purple;
+    background-color: yellow;
+    /* background-color: red; */
+    background-image: url(MEDIA/scanning_for_person.webp); background-position: center; background-repeat: no-repeat; background-size: 125%;
+    border-radius: 360px;
+    z-index: 1;
+} .circle.on {
+    animation: circle-change 2s;
+    background-image: url(MEDIA/pfpafter.png); background-position: center; background-repeat: no-repeat;
+    background-color: red;
+}
+
+.content-scan {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    /* color: white; */
+    color: green;
+    height: 69%;
+    width: 100%;
+    overflow: scroll;
+} .content-scan.on {    
+    border: 3px solid red;
+    background-color: black;
+}

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="main.js"></script>
+        <script src="typed.min.js"></script>
+        <style></style>
+    </head>
+
+    <body>
+        <div class="the-bar"></div>
+        <div class="header">
+            <div class="circle"></div>
+            <div class="person-text">Searching User...</div>
+        </div>
+        <div class="content-scan">
+            <!-- Lorem ipsum dolor -->
+             <span class="text-typed"></span>
+        </div>
+
+        <!-- <script>
+            const div = document.querySelector(".content-scan");
+            const text = "Lorem ipsum dolor";
+
+            function textTypingEffect(element, text, i=0) {
+                    // if (i === 0) {
+                    //     element.textContent = "";
+                    // }
+
+                    element.textContent += text[i];
+
+                    //is end of string reached?
+                    if (i === text.length - 1) {
+                        return;
+                }
+
+                setTimeout(() => textTypingEffect(element, text, i + 1), 50);
+
+                textTypingEffect(element, text, i + 1);
+            }
+
+            textTypingEffect(div, text);
+        </script> -->
+
+        <script>
+            // $(function(){
+            //     $(".content-scan").typed({
+            //         strings: ["Lorem ipsum dolor"],
+            //         typeSpeed: 0
+            //     });
+            // });
+
+            // $('document').ready(function(){
+            //     var typed = new Typed('.content-scan', {
+            //         stringsElement: '.content-scan',
+            //         typeSpeed: 40
+            //     })
+            // })
+
+            var typed = new Typed(".text-typed", {
+                strings: ["Initializing John Shedletsky<br>and heres a new line to see if it will do it and also because this is going to take a while to load and i want to see if it happens"],
+                typeSpeed: 90,
+                backDelay: 10000,
+                loop: true
+            }, setTimeout(typed, 7000))
+
+            // setTimeOut(() => {typed}, 10000);
+        </script>
+
+    </body>
+</html>
