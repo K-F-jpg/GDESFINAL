@@ -34,8 +34,8 @@ body {
 } */
 
 @keyframes scan-thing {
-    0% {transfom: translateY(10px); background-color: yellow;}
-    50% {transform: translateY(2610px); background-color: green;}
+    0% {transfom: translateY(0px); background-color: yellow;}
+    50% {transform: translateY(1970px); background-color: green;}
     100% {transfom: translateY(0px); background-color: yellow;}
 }
 @keyframes gone1 {
@@ -113,7 +113,7 @@ body {
     bottom: 0px;
     /* color: white; */
     color: green;
-    height: 69%;
+    height: 59%;
     width: 100%;
     overflow: scroll;
 } .content-scan.on {    
