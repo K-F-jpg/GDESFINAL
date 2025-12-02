@@ -19,7 +19,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     font-family: SFMono-Regular;
     font-size: 30px;
     gap: 100px;
