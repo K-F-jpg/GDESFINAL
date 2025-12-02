@@ -2,6 +2,10 @@
     font-family: SourceSansPro-Regular;
     src: url(MEDIA/SourceSansPro-Regular.ttf);
 }
+@font-face {
+    font-family: SFMono-Regular;
+    src: url(MEDIA/SFMono-Regular.otf);
+}
 
 @keyframes animation-thing {
     0% {background-color: white;}
@@ -16,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     /* overflow: hidden; */
-    font-family: SourceSansPro-Regular;
+    font-family: SFMono-Regular;
     font-size: 30px;
     gap: 100px;
 } body.animate {
@@ -78,14 +82,14 @@ body {
     /* position: fixed; */
     /* margin-bottom: auto; */
     transform: translateY(730px);
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     word-spacing: 40px;
 }
 
 /* @keyframes circle-change {
-    0% {background-image: url(MEDIA/premium_photo-1689530775582-83b8abdb5020.jpg); background-position: top; background-repeat: no-repeat; background-size: 100%;}
-    100% {background-image: url(MEDIA/ascii-art.png); background-position: center; background-repeat: no-repeat; background-size: 100%;}
+    0% {background-image: url(MEDIA/pfpbefore.png); background-position: top; background-repeat: no-repeat; background-size: 100%;}
+    100% {background-image: url(MEDIA/pfpafter.png); background-position: center; background-repeat: no-repeat; background-size: 100%;}
 } */
 .circle {
     width: 700px;
@@ -103,7 +107,7 @@ body {
 } .circle.on {
     animation: circle-change 2s;
     background-image: url(MEDIA/pfpafter.png); background-position: center; background-repeat: no-repeat;
-    background-color: red;
+    background-color: black;
 }
 
 .content-scan {
@@ -116,6 +120,7 @@ body {
     height: 59%;
     width: 100%;
     overflow: scroll;
+    /* text-shadow: 0 0 32px greenyellow; */
 } .content-scan.on {    
     border: 3px solid red;
     background-color: black;

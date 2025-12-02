@@ -33,7 +33,7 @@ $(document).ready(function(){
             this.textContent = this.textContent.replace('Searching User...','User Found!');
         })
 
-        $('.circle').css('background-image', 'url(MEDIA/pfpbefore.png)', 'background-size', '700px', '700px');
+        $('.circle').css('background-image', 'url(MEDIA/pfpbefore.png)', 'background-size', '100%');
     }, 6000);
 
     setTimeout(function(){
@@ -43,6 +43,7 @@ $(document).ready(function(){
 
         setTimeout(function(){
             $('.circle').animate({top: '50px'});
+            $('.circle').css('background-image', 'url(MEDIA/pfpafter.png)', 'background-size', '1000px');
         }, 300, 'easeInElastic');
 
         $('.content-scan').toggleClass('on');
